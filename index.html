@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumonix Labs AI - Alspire Classrooms</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="container mx-auto flex h-16 items-center justify-between px-4">
+      <div class="flex items-center space-x-8">
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="assets/logo.png" alt="Lumonix Labs" class="h-8 w-auto object-contain" />
+          <span class="font-semibold">Lumonix Labs</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="alspire-classrooms.html" class="text-muted-foreground hover:text-foreground transition-colors">
+            Alspire Classrooms
+          </a>
+          <a href="#features" class="text-muted-foreground hover:text-foreground transition-colors">
+            Features
+          </a>
+          <a href="#pricing" class="text-muted-foreground hover:text-foreground transition-colors">
+            Pricing
+          </a>
+          <a href="#testimonials" class="text-muted-foreground hover:text-foreground transition-colors">
+            Testimonials
+          </a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button class="md:hidden p-2" id="mobile-menu-btn" aria-label="Menu">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 overflow-hidden">
+      <div class="container mx-auto px-4 text-center">
+        <span class="inline-block mb-6 px-3 py-1 text-sm font-medium rounded-full bg-secondary text-secondary-foreground">
+          Transform Education with AI-Powered Learning
+        </span>
+        <h1 class="mx-auto max-w-6xl text-4xl md:text-6xl lg:text-7xl tracking-tight mb-6">
+          Introducing <span class="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Alspire Classrooms</span><br />
+          a smart classroom solution by Lumonix Labs AI.
+        </h1>
+        <p class="mx-auto max-w-2xl text-lg text-muted-foreground mb-8">
+          Create, manage, and scale intelligent learning ecosystems with Alspire Classrooms. From AI-driven classroom frameworks to adaptive course components, Lumonix Labs AI delivers a unified platform built to support educators, students, and institutions as they grow without complexity.
+        </p>
+        
+        <!-- 3D Graphics Scene -->
+        <div class="relative mx-auto max-w-5xl h-96 lg:h-[500px] mb-12">
+          <div id="floating-scene" class="relative w-full h-full" style="perspective: 1000px;">
+            <!-- Central Hub -->
+            <div class="floating-card absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-primary to-primary/70 rounded-3xl shadow-2xl flex items-center justify-center z-10">
+              <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center">
+                <div class="w-8 h-8 bg-primary rounded-lg"></div>
+              </div>
+            </div>
+            
+            <!-- Floating Design System Components -->
+            <div class="floating-card absolute top-16 left-20 w-40 h-24 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Button</div>
+              <div class="space-y-2">
+                <div class="h-3 bg-primary rounded w-16"></div>
+                <div class="h-3 bg-muted rounded w-20"></div>
+              </div>
+            </div>
+            
+            <div class="floating-card absolute top-32 right-16 w-36 h-28 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Colors</div>
+              <div class="grid grid-cols-4 gap-1">
+                <div class="w-4 h-4 bg-primary rounded"></div>
+                <div class="w-4 h-4 bg-secondary rounded"></div>
+                <div class="w-4 h-4 bg-accent rounded"></div>
+                <div class="w-4 h-4 bg-muted rounded"></div>
+                <div class="w-4 h-4 bg-destructive rounded"></div>
+                <div class="w-4 h-4 bg-chart-1 rounded"></div>
+                <div class="w-4 h-4 bg-chart-2 rounded"></div>
+                <div class="w-4 h-4 bg-chart-3 rounded"></div>
+              </div>
+            </div>
+            
+            <div class="floating-card absolute bottom-20 left-12 w-44 h-32 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Typography</div>
+              <div class="space-y-2">
+                <div class="h-4 bg-foreground/90 rounded w-32"></div>
+                <div class="h-3 bg-foreground/70 rounded w-28"></div>
+                <div class="h-2 bg-foreground/50 rounded w-24"></div>
+              </div>
+            </div>
+            
+            <div class="floating-card absolute bottom-24 right-20 w-38 h-36 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Components</div>
+              <div class="space-y-3">
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 bg-primary rounded"></div>
+                  <div class="h-2 bg-muted rounded flex-1"></div>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 bg-secondary rounded"></div>
+                  <div class="h-2 bg-muted rounded flex-1"></div>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 bg-accent rounded"></div>
+                  <div class="h-2 bg-muted rounded flex-1"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="floating-card absolute top-20 right-32 w-32 h-20 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Spacing</div>
+              <div class="space-y-1">
+                <div class="h-1 bg-primary rounded w-4"></div>
+                <div class="h-1 bg-primary rounded w-8"></div>
+                <div class="h-1 bg-primary rounded w-12"></div>
+                <div class="h-1 bg-primary rounded w-16"></div>
+              </div>
+            </div>
+            
+            <div class="floating-card absolute bottom-32 left-32 w-36 h-24 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Icons</div>
+              <div class="grid grid-cols-4 gap-2">
+                <div class="w-4 h-4 bg-foreground/20 rounded"></div>
+                <div class="w-4 h-4 bg-foreground/30 rounded"></div>
+                <div class="w-4 h-4 bg-foreground/40 rounded"></div>
+                <div class="w-4 h-4 bg-foreground/50 rounded"></div>
+              </div>
+            </div>
+            
+            <div class="floating-card absolute top-40 left-40 w-40 h-28 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Docs</div>
+              <div class="space-y-1">
+                <div class="h-2 bg-muted rounded w-full"></div>
+                <div class="h-2 bg-muted rounded w-3/4"></div>
+                <div class="h-2 bg-muted rounded w-5/6"></div>
+                <div class="h-2 bg-muted rounded w-2/3"></div>
+              </div>
+            </div>
+            
+            <div class="floating-card absolute top-12 right-48 w-34 h-26 bg-card border rounded-2xl shadow-lg p-4 transform-gpu">
+              <div class="text-xs text-muted-foreground mb-2">Versions</div>
+              <div class="space-y-2">
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <div class="text-xs">v2.1.0</div>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                  <div class="text-xs">v2.0.5</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Connecting Lines -->
+            <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20">
+              <defs>
+                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.1" />
+                  <stop offset="50%" stop-color="currentColor" stop-opacity="0.3" />
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0.1" />
+                </linearGradient>
+              </defs>
+              <line x1="50%" y1="50%" x2="20%" y2="20%" stroke="url(#lineGradient)" stroke-width="2" class="animate-pulse" />
+              <line x1="50%" y1="50%" x2="80%" y2="30%" stroke="url(#lineGradient)" stroke-width="2" class="animate-pulse" style="animation-delay: 0.5s" />
+              <line x1="50%" y1="50%" x2="25%" y2="75%" stroke="url(#lineGradient)" stroke-width="2" class="animate-pulse" style="animation-delay: 1s" />
+              <line x1="50%" y1="50%" x2="75%" y2="80%" stroke="url(#lineGradient)" stroke-width="2" class="animate-pulse" style="animation-delay: 1.5s" />
+            </svg>
+            
+            <!-- Background Particles -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none" id="particles"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-muted/50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl tracking-tight mb-4">
+            Everything you need for modern education
+          </h2>
+          <p class="max-w-2xl mx-auto text-lg text-muted-foreground">
+            From AI-powered personalization to institutional-grade security, Alspire Classrooms provides 
+            all the tools you need for tomorrow's learning environment.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">AI</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">AI Powered Personalized Learning</h3>
+            <p class="text-muted-foreground">Adaptive lessons and recommendations tailored to each student's pace and ability.</p>
+          </div>
+          
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">Core</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">Smart Classroom Management</h3>
+            <p class="text-muted-foreground">Seamless handling of classes, assignments, attendance, and schedules in one dashboard.</p>
+          </div>
+          
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">Analytics</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">Real Time Academic Insights</h3>
+            <p class="text-muted-foreground">Live analytics on performance, engagement, and learning gaps for data-driven decisions.</p>
+          </div>
+          
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">AI</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">Intelligent Assessment & Feedback</h3>
+            <p class="text-muted-foreground">Automated grading, AI feedback, and progress tracking beyond simple scores.</p>
+          </div>
+          
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">Core</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">Collaborative Learning Spaces</h3>
+            <p class="text-muted-foreground">Built in discussions, group work, and knowledge sharing for modern classrooms.</p>
+          </div>
+          
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">Enterprise</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">Institution Ready Architecture</h3>
+            <p class="text-muted-foreground">Scales from single classrooms to schools and universities with secure role based access.</p>
+          </div>
+          
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">Security</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">Privacy First & Compliance Focused</h3>
+            <p class="text-muted-foreground">Designed with data protection, student privacy, and institutional compliance in mind.</p>
+          </div>
+          
+          <div class="bg-card border rounded-lg p-6 relative">
+            <div class="flex items-center justify-between mb-2">
+              <svg class="h-8 w-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground">Platform</span>
+            </div>
+            <h3 class="text-lg font-medium mb-2">Unified Learning Ecosystem</h3>
+            <p class="text-muted-foreground">Learning content, communication, analytics, and AI tools fully integrated in one platform.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl tracking-tight mb-4">
+            Pricing
+          </h2>
+          <div class="max-w-2xl mx-auto">
+            <span class="inline-block text-lg px-6 py-3 rounded-full bg-secondary text-secondary-foreground">
+              Coming Soon
+            </span>
+            <p class="mt-6 text-lg text-muted-foreground">
+              We're working on creating flexible pricing plans that work for teams of all sizes. Stay tuned for updates!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-muted/50">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl tracking-tight mb-4">
+            Testimonials
+          </h2>
+          <p class="max-w-2xl mx-auto text-lg text-muted-foreground">
+            Coming Soon
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-muted/50">
+    <div class="container mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2">
+          <div class="flex items-center space-x-2 mb-4">
+            <img src="assets/logo.png" alt="Lumonix Labs" class="h-8 w-auto object-contain" />
+            <span class="font-semibold">Lumonix Labs</span>
+          </div>
+          <p class="text-muted-foreground mb-6 max-w-md">
+            The AI-powered smart classroom solution that transforms education through 
+            personalized learning, real-time insights, and collaborative tools for modern institutions.
+          </p>
+          <form id="newsletter-form" class="flex flex-col sm:flex-row gap-2">
+            <input 
+              type="email"
+              id="newsletter-email"
+              placeholder="Enter your email" 
+              class="max-w-xs px-4 py-2 rounded-md border border-input bg-input-background"
+              required
+            />
+            <button type="submit" class="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
+              Subscribe
+            </button>
+          </form>
+        </div>
+        
+        <div>
+          <h4 class="font-medium mb-4">Product</h4>
+          <ul class="space-y-2 text-sm text-muted-foreground">
+            <li><a href="#features" class="hover:text-foreground transition-colors">Features</a></li>
+            <li><a href="#pricing" class="hover:text-foreground transition-colors">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-medium mb-4">Resources</h4>
+          <ul class="space-y-2 text-sm text-muted-foreground">
+            <li><span class="cursor-default">Documentation - Coming Soon</span></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-medium mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-muted-foreground">
+            <li><a href="about.html" class="hover:text-foreground transition-colors">About</a></li>
+            <li><a href="contact.html" class="hover:text-foreground transition-colors">Contact</a></li>
+            <li><a href="support.html" class="hover:text-foreground transition-colors">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t my-8"></div>
+      
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-muted-foreground mb-4 md:mb-0">
+          © 2026 Lumonix Labs. All rights reserved.
+        </p>
+        <div class="flex space-x-6 text-sm text-muted-foreground">
+          <a href="privacy-policy.html" class="hover:text-foreground transition-colors">Privacy Policy</a>
+          <a href="terms-of-service.html" class="hover:text-foreground transition-colors">Terms of Service</a>
+          <a href="cookie-policy.html" class="hover:text-foreground transition-colors">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container" class="fixed bottom-4 right-4 z-50 space-y-2"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
